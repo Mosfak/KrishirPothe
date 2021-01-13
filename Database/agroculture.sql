@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 30, 2020 at 07:04 PM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.2.31
+-- Host: localhost
+-- Generation Time: Jan 13, 2021 at 12:38 PM
+-- Server version: 10.4.16-MariaDB
+-- PHP Version: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -108,8 +108,7 @@ CREATE TABLE `farmer` (
 --
 
 INSERT INTO `farmer` (`fid`, `fname`, `fusername`, `fpassword`, `fhash`, `femail`, `fmobile`, `faddress`, `factive`, `frating`, `picExt`, `picStatus`) VALUES
-(3, 'Kaivalya Hemant Mendki', 'ThePhenom', '$2y$10$22ezmzHRa9c5ycHmVm5RpOnlT4LwFaDZar1XhmLRJQKGrcVRhPgti', '61b4a64be663682e8cb037d9719ad8cd', 'kmendki98@gmail.com', '8600611198', 'abcde', 0, 0, 'png', 0),
-(4, 'suraj ghosh', 'suraj', '$2y$10$7QVBKMVm4p/d0AOCVauhQOdHacpyeVlOgKzROuVO8bGwZc7v7ZjVi', '2291d2ec3b3048d1a6f86c2c4591b7e0', 'soumo@gmail.com', '9007137711', 'kolkata', 0, 0, 'png', 0);
+(5, 'robin', 'robin', '$2y$10$nqQ2dJshWMjGxw1I62PADOEolewKh0k8DszwFm27yEQugTRywBYM2', 'b2eeb7362ef83deff5c7813a67e14f0a', 'robin@gmail.com', '0938503849', 'sldkfj', 0, 0, 'png', 0);
 
 -- --------------------------------------------------------
 
@@ -133,10 +132,8 @@ CREATE TABLE `fproduct` (
 --
 
 INSERT INTO `fproduct` (`fid`, `pid`, `product`, `pcat`, `pinfo`, `price`, `pimage`, `picStatus`) VALUES
-(3, 27, 'Mango', 'Fruit', '<p>Mango raseela</p>\r\n', 500, 'Mango3.jpeg', 1),
 (3, 28, 'Ladyfinger', 'Vegetable', '<p>Its veggie</p>\r\n', 1000, 'Ladyfinger3.jpg', 1),
-(3, 29, 'Bajra', 'Grains', '<p>bajre di rti</p>\r\n', 400, 'Bajra3.jpg', 1),
-(3, 30, 'Banana', 'Fruit', '<p>Jalgaon banana</p>\r\n', 400, 'Banana3.jpg', 1);
+(5, 33, 'Wheat', 'Grains', '', 100, 'Wheat5.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -173,7 +170,10 @@ CREATE TABLE `mycart` (
 
 INSERT INTO `mycart` (`bid`, `pid`) VALUES
 (3, 27),
-(3, 30);
+(3, 30),
+(5, 28),
+(5, 33),
+(5, 33);
 
 -- --------------------------------------------------------
 
@@ -211,7 +211,8 @@ CREATE TABLE `transaction` (
 --
 
 INSERT INTO `transaction` (`tid`, `bid`, `pid`, `name`, `city`, `mobile`, `email`, `pincode`, `addr`) VALUES
-(1, 3, 28, 'sa,j,cns', 'sajc', 'sajch', 'kmendki98@gmail.com', 'sacu', 'ckaskjc');
+(2, 5, 28, 'robin', 'chittagong', '03985493847', 'robin@gmail.com', '1234', 'slkdfj'),
+(3, 5, 33, 'robin', 'Chittagong', '0938503849', 'robin@gmail.com', '1234', 'sldkfj');
 
 --
 -- Indexes for dumped tables
@@ -276,19 +277,19 @@ ALTER TABLE `buyer`
 -- AUTO_INCREMENT for table `farmer`
 --
 ALTER TABLE `farmer`
-  MODIFY `fid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `fid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `fproduct`
 --
 ALTER TABLE `fproduct`
-  MODIFY `pid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `pid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `tid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `tid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
