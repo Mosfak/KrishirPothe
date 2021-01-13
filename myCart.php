@@ -80,6 +80,7 @@
 							<div style="align: left">
 							<blockquote><?php echo "Type : ".$row1['pcat'].'';?><br><?php echo "Price : ".$row1['price'].' /-';?><br></blockquote>
 
+
 						</section>
 						</div>
 
@@ -91,7 +92,7 @@
 
 			</section>
 					</header>
-
+				<button style="background-color: green; ">Buy Now</button>
 			</section>
 
 	</body>

@@ -81,7 +81,7 @@
 		<center>
 			<h1 style="font: 35px calibri;">About Us</h1>
 		</center>
-		<div class="footer-left">
+		<div class="footer-left" style="text-align: center">
 			<h3 style="font-family: 'Times New Roman', cursive;">Krishir Pothe &copy; </h3>
 		<!--	<div class="logo">
 				<a href="index.php"><img src="images/logo.png" width="200px"></a>
@@ -91,7 +91,7 @@
 			<br />
 		</div>
 
-		<div class="footer-center">
+		<div class="footer-center" style="text-align: center">
 			<div>
 				<i class="fa fa-map-marker"></i>
 				<p style="font-size:20px">Agro Culture Fam<span>Vormir</span></p>
@@ -106,13 +106,13 @@
 			</div>
 		</div>
 
-		<div class="footer-right">
-			<p class="footer-company-about" style="color:white">
-				<span style="font-size:20px"><b>About Krishir Pothe</b></span>
+		<div class="footer-right" style="text-align: center;">
+			<p class="footer-company-about" style="color:white;text-align:center;">
+				<span style="font-size:20px;"><b>About Krishir Pothe</b></span>
 				Krishir Pothe is e-commerce trading platform for grains & grocerries...
 			</p>
-			<div class="footer-icons">
-				<a  href="#"><i style="margin-left: 0;margin-top:5px;"class="fa fa-facebook"></i></a>
+			<div class="footer-icons" >
+				<a  href="#"><i style="margin-left: 0;margin-top:5px"class="fa fa-facebook"></i></a>
 				<a href="#"><i style="margin-left: 0;margin-top:5px" class="fa fa-instagram"></i></a>
 				<a href="#"><i style="margin-left: 0;margin-top:5px" class="fa fa-youtube"></i></a>
 			</div>

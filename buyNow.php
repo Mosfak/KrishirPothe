@@ -64,7 +64,7 @@
     <section id="main" class="wrapper" >
         <div class="container">
         <center>
-                <h2>Transaction Details</h2>
+                <h2>Bkash Transaction</h2>
         </center>
         <section id="two" class="wrapper style2 align-center">
         <div class="container">
@@ -90,7 +90,7 @@
                     </div>
                     <div class="row uniform">
                         <div class="4u 12u$(xsmall)">
-                            <input type="text" name="pincode" id="pincode" value="" placeholder="Pincode" required/>
+                            <input type="text" name="pincode" id="pincode" value="" placeholder="Bkash Pin" required/>
                         </div>
                         <div class="8u 12u$(xsmall)">
                             <input type="text" name="addr" id="addr" value="" placeholder="Address" style="width:80%" required/>
