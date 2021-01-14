@@ -91,14 +91,14 @@
 			<br />
 		</div>
 
-		<div class="footer-center" style="text-align: center">
+		<div class="footer-center" style="text-align: center; color:white;">
 			<div>
 				<i class="fa fa-map-marker"></i>
-				<p style="font-size:20px">Agro Culture Fam<span>Vormir</span></p>
+				<p style="font-size:24px;">Krishir Pothe Farm</p>
 			</div>
 			<div>
 				<i class="fa fa-phone"></i>
-				<p style="font-size:20px">4511148488</p>
+				<p style="font-size:24px;">01884287045</p>
 			</div>
 			<div>
 				<i class="fa fa-envelope"></i>

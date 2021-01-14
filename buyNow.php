@@ -1,7 +1,9 @@
 <?php
 	session_start();
 	require 'db.php';
+    $_GET['pid'] = 0;
     $pid = $_GET['pid'];
+
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         $name = $_POST['name'];

@@ -92,7 +92,7 @@
 
 			</section>
 					</header>
-				<button style="background-color: green; ">Buy Now</button>
+				<button style="background-color: green; "><a style="text-decoration: none;font-size:20; padding: 20px 295px"href="buyNow.php">Buy Now</a></button>
 			</section>
 
 	</body>
